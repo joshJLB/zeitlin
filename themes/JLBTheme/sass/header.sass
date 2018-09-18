@@ -19,10 +19,15 @@ header
         .logo
           +bg(contain, center)
           height: 5rem
+html body header
+  .header.active
+    background-color: $color5
+    transition: .5s
 
 // Mobile Menu Button
 .mobile-button
   +fb(center, center)
+  color: $color2
   p 
     margin: 0 2rem 0 0
     text-transform: uppercase
@@ -86,10 +91,10 @@ header
 
 // mobile menu button that changes to X
 .bar.active
-  background-color: black !important
+  background-color: $color2
 
 .bar
-  background-color: black
+  background-color: $color2
   height: 4px
   width: 2rem
   margin-bottom: 5px

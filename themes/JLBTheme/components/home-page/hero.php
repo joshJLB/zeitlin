@@ -10,7 +10,7 @@
   // Hero Section Variables
   // $hero_background = get_field('hero_background');
   // $hero_video = get_field('hero_video');
-  // $hero_slider = get_field('hero_slider');
+  $hero_slider = get_field('hero_slider');
 ?>
 <?php if (!$hero_video && !$hero_slider): ?>
   <section class="hero" style="background-image: url('<?php echo $hero_background['url']; ?>');" title="<?php echo $hero_background['alt']; ?>">
@@ -25,8 +25,15 @@
         ?>
 
           <!-- Hero Slider Slides -->
-          <div class="hero-slide" style="background-image: url('<?php echo $b['url']; ?>');" title="<?php echo $b['alt']; ?>"></div>
-
+          <div class="slide">
+            <div class="hero-slide" style="background-image: url('<?php echo $b['url']; ?>');" title="<?php echo $b['alt']; ?>">
+              <div class="hero-content">
+                <div class="overlay"></div>
+                <h1><?=get_sub_field('title'); ?></h1>
+                <p><?=get_sub_field('sub_text'); ?></p>
+              </div>
+            </div>
+          </div>
         <?php endwhile; wp_reset_postdata(); ?>
       </div>
     <?php else: ?>

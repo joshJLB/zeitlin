@@ -19,7 +19,7 @@ $('.mobile-button').click(function() {
     $('.bar').addClass('back');
   }
   $('.bar').toggleClass('change');
-
+  $('.header').toggleClass('active');
   // toggle mobile menu
   $('.mobile-menu').toggleClass('active');
   $('.bar').toggleClass('active');
@@ -85,4 +85,16 @@ function detectBrowser() {
 }
 $('body').addClass(detectBrowser());
 
+// sliders
+$('.hero-slider').slick({
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 6000
+});
+
+$('.one-slider-container').slick({
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 3000
+});
 });//close all jquery
