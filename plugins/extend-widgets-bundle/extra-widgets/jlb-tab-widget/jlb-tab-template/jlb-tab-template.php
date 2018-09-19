@@ -7,11 +7,13 @@
   $count++;
   $title = $tab['repeat_text']; ?>
     <li class="nav-item">
-      <a class="nav-link <?php if($count == 1) { echo 'active'; }; ?>" data-toggle="tab" href="#tab-<?php echo $count; ?>" role="tab">
-        <?php echo $title; ?>
-        <div class="arrow-div white-bottom"></div>
-        <div class="arrow-div grey-bottom"></div>
-      </a>
+        <a class="nav-link <?php if($count == 1) { echo 'active'; }; ?>" data-toggle="tab" href="#tab-<?php echo $count; ?>" role="tab">
+          <div class="nav-inner">
+            <?php echo $title; ?>
+          </div>
+          <div class="arrow-div white-bottom"></div>
+          <div class="arrow-div grey-bottom"></div>
+        </a>
     </li>
 <?php }; ?>
 </ul>
@@ -27,10 +29,11 @@
   <div class="tab-pane <?php if($count2 == 1) { echo 'active'; }; ?>" id="tab-<?php echo $count2; ?>" role="tabpanel">
     <div class="content-holder">
       <?php echo $content; ?>
+      <a href="<?php echo $link; ?>" class="link-bottom">
+        <?php echo $link_text; ?>
+      </a>
     </div>
-    <a href="<?php echo $link; ?>" class="link-bottom">
-      <p><?php echo $link_text; ?></p>
-    </a>
+    
   </div>
 <?php }; ?>
 </div>
