@@ -95,6 +95,10 @@ $('.hero-slider').slick({
 $('.one-slider-container').slick({
   infinite: true,
   autoplay: true,
-  autoplaySpeed: 3000
+  autoplaySpeed: 3000,
+  appendArrows: $('.community-header'),
+  prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fal fa-angle-left' aria-hidden='true'></i></button>",
+  nextArrow: "<button type='button' class='slick-next pull-right'><i class='fal fa-angle-right' aria-hidden='true'></i></button>",
 });
+
 });//close all jquery

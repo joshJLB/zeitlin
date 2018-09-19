@@ -10,21 +10,51 @@ get_header(); ?>
   <?php get_template_part('components/home-page/hero'); ?>
   <!-- Continue Sections -->
   <section class="one">
-    <h2><?=get_field('community_title'); ?></h2>
+    <h2 class="community-header"><?=get_field('community_title'); ?></h2>
     <div class="one-slider-container">
       <?php if ( have_rows('community_slider') ): ?>
       <?php while ( have_rows('community_slider') ): the_row(); ?>
 
       <div class="slide">
-        <div class="community-div" style="background-image: url(<?=get_sub_field('image_one'); ?>);"></div>
-        <div class="community-div community-div-two">
-          <div class="community-image-two" style="background-image: url(<?=get_sub_field('image_two'); ?>);"></div>
-          <div class="community-image-three" style="background-image: url(<?=get_sub_field('image_three'); ?>);"></div>
+        <div class="community-div community-div-one">
+          <div class="community-image-one" style="background-image: url(<?=get_sub_field('image_one'); ?>);">
+            <div class="overlay2"></div>
+            <h2><?=get_sub_field('title_one'); ?></h2>
+          </div>
         </div>
-        <div class="community-div" style="background-image: url(<?=get_sub_field('image_four'); ?>);"></div>
+        <div class="community-div community-div-two">
+          <div class="community-image-two-wrapper">
+            <div class="community-image-two" style="background-image: url(<?=get_sub_field('image_two'); ?>);">
+              <div class="overlay2"></div>
+              <h2><?=get_sub_field('title_two'); ?></h2>
+            </div>
+          </div>
+          <div class="community-image-three-wrapper">
+            <div class="community-image-three" style="background-image: url(<?=get_sub_field('image_three'); ?>);">
+              <div class="overlay2"></div>
+              <h2><?=get_sub_field('title_three'); ?></h2>
+            </div>
+          </div>
+        </div>
         <div class="community-div">
-          <div class="community-image-five" style="background-image: url(<?=get_sub_field('image_five'); ?>);"></div>
-          <div class="community-image-six" style="background-image: url(<?=get_sub_field('image_six'); ?>);"></div>
+          <div class="community-image-four" style="background-image: url(<?=get_sub_field('image_four'); ?>);">
+            <div class="overlay2"></div>
+            <h2><?=get_sub_field('title_four'); ?></h2>
+          </div>
+        </div>
+        <div class="community-div community-div-four">
+          <div class="community-image-five-wrapper">
+            <div class="community-image-five" style="background-image: url(<?=get_sub_field('image_five'); ?>);">
+              <div class="overlay2"></div>
+              <h2><?=get_sub_field('title_five'); ?></h2>
+            </div>
+          </div>
+          <div class="community-image-six-wrapper">
+            <div class="community-image-six" style="background-image: url(<?=get_sub_field('image_six'); ?>);">
+              <div class="overlay2"></div>
+              <h2><?=get_sub_field('title_six'); ?></h2>
+            </div>
+          </div>
         </div>
       </div>
 

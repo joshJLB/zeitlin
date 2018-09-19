@@ -23,19 +23,77 @@
       display: none !important
     .hero-slide
       padding: 15rem 0 10rem
-  .one-slider-container
-    height: 60vw
-    .slick-slide
-      +fb(stretch, flex-start)
-      .community-div
-        width: 25%
-        +bg(cover,center)
-      .community-div-two
-        +bg(cover,center)
-        +fb(stretch,flex-start)
-        flex-wrap: wrap
-        .community-image-two, .community-image-three
-          width: 100%
+  .one
+    .community-header
+      padding: 2rem 0
+      background: $color3
+      color: $color2
+      font-weight: 700
+      letter-spacing: .25rem
+      text-align: center
+      button 
+        padding: 0 1.5rem
+        cursor: pointer
+        background: none
+        border: none
+        color: $color2
+    .one-slider-container
+      height: 30rem
+      .slick-slide
+        height: 100%
+        width: 100%
+        +fb(stretch, flex-start)
+        .community-div
+          padding: .25rem
+          width: 25%
+          border-radius: 5px
+          position: relative
+          .overlay2
+            display: none
+            border-radius: 5px
+          h2 
+            z-index: 3
+            position: relative
+            padding: 0 4rem
+            color: $color2
+            font-weight: 300
+            text-align: center
+          .community-image-one, .community-image-four
+            height: 100%
+            width: 100%
+            +bg(cover,center)
+            +fb(center,center)
+            border-radius: 5px 
+            position: relative
+        .community-div-one
+          padding-left: 0
+        .community-div-four
+          padding-right: 0
+        .community-div-two, .community-div-four
+          +bg(cover,center)
+          +fb(stretch,flex-start)
+          flex-wrap: wrap
+          .community-image-two-wrapper, .community-image-five-wrapper
+            padding-bottom: .25rem
+          .community-image-three-wrapper, .community-image-six-wrapper
+            padding-top: .25rem
+          .community-image-two-wrapper, .community-image-three-wrapper, .community-image-five-wrapper, .community-image-six-wrapper
+            width: 100%
+            position: relative
+            .overlay2
+              // visibility: hidden
+            .community-image-two, .community-image-three, .community-image-five, .community-image-six
+              height: 100%
+              width: 100%
+              position: relative
+              +bg(cover,center)
+              border-radius: 5px
+              +fb(center,center)
+        .community-image-one:hover, .community-image-two-wrapper:hover, .community-image-three:hover, .community-image-four:hover, .community-image-five:hover, .community-image-six:hover
+          transform: translateY(-10px)
+          transition: .25s
+          .overlay2
+            display: flex
   .slick-list, .slick-track
     height: 100%
     .hero-slide
