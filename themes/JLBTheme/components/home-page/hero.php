@@ -28,7 +28,6 @@
           <div class="slide">
             <div class="hero-slide" style="background-image: url('<?php echo $b['url']; ?>');" title="<?php echo $b['alt']; ?>">
               <div class="hero-content">
-                <div class="overlay"></div>
                 <h1><?=get_sub_field('title'); ?></h1>
                 <p><?=get_sub_field('sub_text'); ?></p>
               </div>

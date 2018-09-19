@@ -36,7 +36,7 @@ get_header(); ?>
             </div>
           </div>
         </div>
-        <div class="community-div">
+        <div class="community-div community-div-three">
           <div class="community-image-four" style="background-image: url(<?=get_sub_field('image_four'); ?>);">
             <div class="overlay2"></div>
             <h2><?=get_sub_field('title_four'); ?></h2>
