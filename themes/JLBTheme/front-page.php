@@ -62,6 +62,22 @@ get_header(); ?>
       <?php endif;?>
     </div>
   </section>
+
+  <section class="two">
+    <div class="two-container">
+      <?php if ( have_rows('two_repeater') ): ?>
+      <?php while ( have_rows('two_repeater') ): the_row(); ?>
+        <div class="two-links-wrapper">
+          <div class="two-links" style="background-image: url(<?=get_sub_field('image'); ?>);">
+            <div class="overlay3"></div>
+            <a href="<?=get_sub_field('link_url'); ?>"><?=get_sub_field('link_text'); ?></a>
+          </div>
+        </div>
+      <?php endwhile; ?>
+      <?php endif; ?>
+    </div>
+  </section>
+
 </main>
 
 <?php get_footer();

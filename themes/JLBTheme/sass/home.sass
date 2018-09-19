@@ -1,3 +1,37 @@
 @import 'variables'
 
 // Home Page Styling
+.two
+    .two-container
+        padding: 1rem
+        +fb(flex-start,flext-start)
+        flex-wrap: wrap
+        @media #{$xlarge}
+            padding: .5rem
+        .two-links-wrapper
+            padding: 1rem
+            width: 33.3%
+            @media #{$xlarge}
+                padding: .5rem
+            @media #{$medium}
+                width: 100%
+            .two-links
+                +fb(center,center)
+                position: relative
+                text-align: center
+                a 
+                    z-index: 3
+                    position: relative
+                    padding: 5rem 0
+                    width: 100%
+                    color: $color2
+                    font-size: 2rem
+                    font-weight: 700
+                    @media #{$large}
+                        font-size: 1.5rem
+            .two-links:hover
+                box-shadow: 0 0 10px $color5
+                transition: .25s
+                .overlay3
+                    background: rgba(40,40,40,.7)
+                    transition: .25s
