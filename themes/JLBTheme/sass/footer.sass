@@ -2,8 +2,62 @@
 
 // Footer Styling
 .footer
-  background-color: $color1
+  .footer-top
+    .footer-one
+      padding: 3rem 5rem
+      background-color: $color3
+      color: #fff 
+      text-align: center
+      h2 
+        font-size: 3rem
+        font-weight: 300
+      p 
+        font-style: italic
+    .footer-inner
+      position: relative
+      +bg(cover,center)
+      .footer-two
+        z-index: 3
+        position: relative
+        padding-top: 3rem
+        margin: 0 auto 3rem
+        width: 60%
+        .footer-links
+          margin-bottom: 3rem
+          +fb(center,space-between)
+          a 
+            color: $color2
+            text-transform: uppercase
+            letter-spacing: .15rem
+        .footer-contact
+          color: $color2
+          +fb(center,space-between)
+          .contact-info
+            width: 30%
+          .contact-logo
+            text-align: center 
+            img 
+              margin-bottom: 2rem
+            a 
+              padding: .5rem
+              color: $color2
+              font-size: 1.5rem
+          .contact-disclaimers
+            padding-left: 6rem
+            width: 30%
+            text-align: right
+      .footer-three
+        z-index: 3
+        position: relative
+        padding: 1rem 5rem
+        color: $color2
+        text-align: center 
+        border-top: 5px solid $color5
+        p 
+          margin: 0
+          font-style: italic
   .jlb
+    background-color: $color1
     color: white
     padding: 1rem
     p
