@@ -19,6 +19,9 @@ header
         .logo
           +bg(contain, center)
           height: 5rem
+          @media #{$small}
+            width: 8rem
+            height: 5rem
 html body header
   .header.active
     background-color: $color5
@@ -28,6 +31,9 @@ html body header
 .mobile-button
   +fb(center, center)
   color: $color2
+  @media #{$small}
+    p 
+      display: none
   p 
     margin: 0 2rem 0 0
     text-transform: uppercase
