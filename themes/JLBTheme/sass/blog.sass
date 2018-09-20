@@ -1,3 +1,61 @@
 @import 'variables'
 
 // Blog Styling
+.blog-container
+    padding: 5rem 0
+    position: relative
+    +bg(cover,center)
+    background-attachment: fixed
+    .blog-posts
+        padding: 1rem
+        +fb(stretch,flex-start)
+        flex-wrap: wrap 
+        .blog-post-container
+            padding: 1rem
+            width: 25%
+            +fb(stretch,flex-start)
+            flex-wrap: wrap 
+            @media #{$xxlarge}
+                width: 33.3%
+            @media #{$xlarge}
+                width: 50%
+            @media #{$medium}
+                width: 100%
+                padding: 1.5rem 1rem
+            .blog-post
+                z-index: 3
+                position: relative
+                height: 90%
+                background: $color2 
+                .blog-post-image
+                    height: 15rem
+                    +bg(cover,center)
+                h3 
+                    padding: 1rem 2rem
+                    color: $color2
+                    font-size: 1.25rem
+                    font-weight: 300
+                    text-transform: uppercase
+                    background-color: $color3
+                    text-align: center
+                    @media #{$xxlarge}
+                        font-size: 1rem
+                .blog-post-content
+                    padding: 1rem 2rem 0
+                    p 
+                        margin: 0
+            a 
+                z-index: 3 
+                position: relative
+                padding: .5rem 0
+                margin: 1.5rem auto 
+                width: 65%
+                color: $color3
+                font-style: italic
+                background: $color2
+                align-self: flex-end
+                text-align: center
+            a:hover 
+                background: $color3
+                color: $color2
+                transition: .25s

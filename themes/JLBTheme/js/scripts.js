@@ -101,4 +101,9 @@ $('.one-slider-container').slick({
   nextArrow: "<button type='button' class='slick-next pull-right'><i class='fal fa-angle-right' aria-hidden='true'></i></button>",
 });
 
+// substrings
+$('.blog-post-content').text(function(index, currentContent) {
+  return currentContent.substr(0,300) + '...';
+})
+
 });//close all jquery

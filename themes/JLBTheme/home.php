@@ -8,7 +8,8 @@ get_header(); ?>
 <main id="blog-page">
   <?php get_template_part('components/header/child-header'); ?>
 
-  <div class="blog-container">
+  <div class="blog-container" style="background-image: url(<?=get_field('blog_background', 'option'); ?>);">
+    <div class="overlay"></div>
     <?php
       $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
       $args = array( 'posts_per_page' => '12', 'paged' => $paged );
@@ -20,10 +21,13 @@ get_header(); ?>
 
           <div class="blog-post-container">
             <div class="blog-post">
-              <h3><?php the_title(); ?></h3>
-              <h5><?php the_author(); ?></h5>
-              <?php the_excerpt(); ?>
+              <div class="blog-post-image" style="background-image: url(<?=the_post_thumbnail_url(); ?>);"></div>
+              <h3><?php the_title(); ?> // <?php the_time('M.j, Y'); ?></h3>
+              <div class="blog-post-content">
+                <?php the_excerpt(); ?>
+              </div>
             </div>
+            <a href="<?=the_permalink(); ?>">Read More</a>
           </div>
 
         <?php endwhile; ?>
