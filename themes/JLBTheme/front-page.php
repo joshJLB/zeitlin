@@ -19,40 +19,40 @@ get_header(); ?>
         <div class="community-div community-div-one">
           <div class="community-image-one" style="background-image: url(<?=get_sub_field('image_one'); ?>);">
             <div class="overlay2"></div>
-            <h2><?=get_sub_field('title_one'); ?></h2>
+            <a href="<?=get_sub_field('link_url_one'); ?>"><?=get_sub_field('title_one'); ?></a>
           </div>
         </div>
         <div class="community-div community-div-two">
           <div class="community-image-two-wrapper">
             <div class="community-image-two" style="background-image: url(<?=get_sub_field('image_two'); ?>);">
               <div class="overlay2"></div>
-              <h2><?=get_sub_field('title_two'); ?></h2>
+              <a href="<?=get_sub_field('link_url_two'); ?>"><?=get_sub_field('title_two'); ?></a>
             </div>
           </div>
           <div class="community-image-three-wrapper">
             <div class="community-image-three" style="background-image: url(<?=get_sub_field('image_three'); ?>);">
               <div class="overlay2"></div>
-              <h2><?=get_sub_field('title_three'); ?></h2>
+              <a href="<?=get_sub_field('link_url_three'); ?>"><?=get_sub_field('title_three'); ?></a>
             </div>
           </div>
         </div>
         <div class="community-div community-div-three">
           <div class="community-image-four" style="background-image: url(<?=get_sub_field('image_four'); ?>);">
             <div class="overlay2"></div>
-            <h2><?=get_sub_field('title_four'); ?></h2>
+            <a href="<?=get_sub_field('link_url_four'); ?>"><?=get_sub_field('title_four'); ?></a>
           </div>
         </div>
         <div class="community-div community-div-four">
           <div class="community-image-five-wrapper">
             <div class="community-image-five" style="background-image: url(<?=get_sub_field('image_five'); ?>);">
               <div class="overlay2"></div>
-              <h2><?=get_sub_field('title_five'); ?></h2>
+              <a href="<?=get_sub_field('link_url_five'); ?>"><?=get_sub_field('title_five'); ?></a>
             </div>
           </div>
           <div class="community-image-six-wrapper">
             <div class="community-image-six" style="background-image: url(<?=get_sub_field('image_six'); ?>);">
               <div class="overlay2"></div>
-              <h2><?=get_sub_field('title_six'); ?></h2>
+              <a href="<?=get_sub_field('link_url_six'); ?>"><?=get_sub_field('title_six'); ?></a>
             </div>
           </div>
         </div>

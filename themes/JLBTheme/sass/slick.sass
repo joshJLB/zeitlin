@@ -40,7 +40,11 @@
       display: none !important
     .hero-slide
       padding: 15rem 0 10rem
-  .one
+  .slick-list, .slick-track
+    height: 100%
+    .hero-slide
+      +bg(cover, center)
+.one, .image-gallery
     .community-header
       padding: 2rem 0
       background: $color3
@@ -77,11 +81,12 @@
           .overlay2
             display: none
             border-radius: 5px
-          h2 
+          a 
             z-index: 3
             position: relative
             padding: 0 4rem
             color: $color2
+            font-size: 2rem
             font-weight: 300
             text-align: center
             @media #{$xlarge}
@@ -135,10 +140,6 @@
           transition: .25s
           .overlay2
             display: flex
-  .slick-list, .slick-track
-    height: 100%
-    .hero-slide
-      +bg(cover, center)
 
 .slick-dots
   position: absolute

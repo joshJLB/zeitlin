@@ -88,6 +88,23 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_5ba3be6c4d723",
+                    "label": "Link URL One",
+                    "name": "link_url_one",
+                    "type": "url",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
                     "key": "field_5ba16c0087a30",
                     "label": "Image Two",
                     "name": "image_two",
@@ -131,6 +148,23 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_5ba3be8c4d724",
+                    "label": "Link URL Two",
+                    "name": "link_url_two",
+                    "type": "url",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
                 },
                 {
                     "key": "field_5ba16c2b87a32",
@@ -178,6 +212,23 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_5ba3be954d725",
+                    "label": "Link URL Three",
+                    "name": "link_url_three",
+                    "type": "url",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
                     "key": "field_5ba16c3c87a34",
                     "label": "Image Four",
                     "name": "image_four",
@@ -221,6 +272,23 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_5ba3bea54d726",
+                    "label": "Link URL Four",
+                    "name": "link_url_four",
+                    "type": "url",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
                 },
                 {
                     "key": "field_5ba16c5687a36",
@@ -268,6 +336,23 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_5ba3beae4d727",
+                    "label": "Link URL Five",
+                    "name": "link_url_five",
+                    "type": "url",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
                     "key": "field_5ba16c6b87a38",
                     "label": "Image Six",
                     "name": "image_six",
@@ -311,6 +396,23 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_5ba3beb74d728",
+                    "label": "Link URL Six",
+                    "name": "link_url_six",
+                    "type": "url",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
                 }
             ]
         }
@@ -332,5 +434,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1537307275
+    "modified": 1537457923
 }
