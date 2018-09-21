@@ -29,6 +29,7 @@ function theme_enqueues() {
 	// SCRIPTS
   wp_enqueue_script( 'extra-scripts' );
 	wp_enqueue_script( 'scripts-js' );
+	wp_enqueue_script('ajax-load-more');
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueues', 100 );
 
@@ -92,3 +93,9 @@ function add_grav_forms(){
   $role->add_cap('gform_full_access');
 }
 add_action('admin_init','add_grav_forms');
+
+// Enqueing Ajax Load More Plugin
+function enqueue_ajax_load_more() {
+	wp_enqueue_script('ajax-load-more');  
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_ajax_load_more' );

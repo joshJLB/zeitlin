@@ -1,0 +1,56 @@
+@import 'variables'
+
+// Communities Styles
+.alm-listing.communities-container
+    padding: 0
+    margin: 4rem auto 1rem
+    width: 90%
+    +fb(stretch,flex-start)
+    flex-wrap: wrap 
+    @media #{$xxlarge}
+        padding: .5rem
+        width: 100%
+    @media #{$small}
+        padding: .25rem
+    .community-container
+        padding: .5rem
+        width: 25%
+        @media #{$xlarge}
+            width: 33.3%
+        @media #{$medium}
+            width: 50%
+        @media #{$small}
+            padding: .25rem
+        .community-image
+            height: 20rem
+            position: relative
+            +bg(cover,center)
+            +fb(center,center)
+            @media #{$large}
+                height: 15rem
+            a 
+                height: 100%
+                width: 100%
+                z-index: 3
+                position: relative 
+                color: $color2
+                font-size: 1.75rem
+                text-transform: uppercase
+                text-align: center
+                +fb(center,center)
+                @media #{$large}
+                    font-size: 1.25rem
+                p 
+                    padding: 0 .5rem
+                    margin: 0
+            a:hover 
+                background: rgba(13,41,79,.5)
+                transition: .25s
+.ajax-load-more-wrap.grey
+    button.alm-load-more-btn 
+        padding: 0 10rem
+        text-transform: lowercase 
+        font-style: italic
+        font-family: $font1 
+        font-weight: 300
+        background-color: $color3
