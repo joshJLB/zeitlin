@@ -1,3 +1,4 @@
+
 jQuery(document).ready(function( $ ) {
 
 // on scroll watch header
@@ -75,7 +76,7 @@ function detectBrowser() {
   }
 
   // detect edge
-  var edge = ua.indexOf('Edge/');
+  var edge = ua.indexOf('Edge/'); 
   if (edge > 0) {
      return 'is-edge';
   }
@@ -105,5 +106,7 @@ $('.one-slider-container').slick({
 $('.blog-post-content').text(function(index, currentContent) {
   return currentContent.substr(0,300) + '...';
 })
+
+// chart.js 
 
 });//close all jquery
