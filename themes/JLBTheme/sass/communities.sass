@@ -152,3 +152,49 @@
                 background-color: $color3
                 @media #{$large}
                     margin: 0 auto
+.four 
+    padding: 8rem 0 4rem
+    .four-container
+        margin: 0 auto
+        width: 80%
+        @media #{$xxlarge}
+            width: 90%
+        @media #{$medium}
+            width: 100%
+        .four-graph-container
+            margin-bottom: 5rem
+            +fb(flex-start,flex-start)
+            flex-wrap: wrap 
+            .four-graph-wrapper
+                padding: 0 2rem
+                width: 50%
+                text-align: center
+                @media #{$large}
+                    margin-bottom: 2rem
+                    width: 100%
+                @media #{$small}
+                    padding: 0 .25rem
+                h2 
+                    margin-bottom: 2rem
+                .canvas-wrapper
+                    position: relative
+                    .chartjs
+                        margin-bottom: 2rem
+                        height: 100%
+                        width: 100%
+                    .graph-watermark
+                        z-index: -1
+                        position: absolute
+                        top: 47%
+                        left: 55.5%
+                        transform: translate(-55.5%,-47%)
+                        color: $color4
+                        text-transform: uppercase
+        .four-closing
+            color: $color3
+            text-align: center 
+            p 
+                font-weight: 300
+                font-size: 3rem
+                a 
+                    border-bottom: 1px solid $color3

@@ -4,7 +4,9 @@ Template Name: Single Community
 Template Post Type: page
 */
 
-get_header(); ?>
+    get_header(); 
+    $count = 0;
+?>
 
 <main id="single-community">
     <?php get_template_part('components/header/child-header'); ?>
@@ -48,6 +50,104 @@ get_header(); ?>
         </div>
     </section>
 
+    <section class="four">
+        <div class="four-container">
+            <div class="four-graph-container">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+                <?php if ( have_rows('graph_repeater') ): ?>
+                <?php while ( have_rows('graph_repeater') ): the_row(); ?>
+                    <?php $count++ ?> 
+                    <div class="four-graph-wrapper">
+                        <h2><?=get_sub_field('graph_title'); ?></h2>
+                        <div class="canvas-wrapper">
+                            <p class="graph-watermark"><?=get_sub_field('graph_watermark')?></p>
+                            <canvas id="chart-<?=$count?>" class="chartjs"></canvas> 
+                        </div>
+                        <script>
+                            var scatterChart<?=$count?> = new Chart(document.getElementById("chart-<?=$count?>"), {
+                                type: 'scatter',
+                                data: {
+                                    datasets: [
+                                        {
+                                            label: 'Blue',
+                                            pointBackgroundColor: '#0d294f',
+                                            pointRadius: 5,
+                                            data: [
+                                                <?php if ( have_rows('blue_values_repeater') ): ?>
+                                                <?php while ( have_rows('blue_values_repeater') ): the_row(); ?>
+                                                    <?php
+                                                        $xNumber = get_sub_field('horizontal_number');
+                                                        $yNumber = get_sub_field('vertical_number');
+                                                    ?>
+                                                    {
+                                                        x: <?=$xNumber; ?>,
+                                                        y: <?=$yNumber; ?>
+                                                    },
+                                                <?php endwhile; ?>
+                                                <?php endif; ?> 
+                                            ]
+                                        },
+                                        {
+                                            label: 'Red',
+                                            pointBackgroundColor: '#bf0000',
+                                            pointRadius: 5,
+                                            data: [
+                                                <?php if ( have_rows('red_values_repeater') ): ?>
+                                                <?php while ( have_rows('red_values_repeater') ): the_row(); ?>
+                                                    <?php
+                                                        $xNumber = get_sub_field('horizontal_number');
+                                                        $yNumber = get_sub_field('vertical_number');
+                                                    ?>
+                                                    {
+                                                        x: <?=$xNumber; ?>,
+                                                        y: <?=$yNumber; ?>
+                                                    },
+                                                <?php endwhile; ?>
+                                                <?php endif; ?> 
+                                            ]
+                                        }
+                                    ],
+                                },
+                                options: {
+                                    scales: {
+                                        xAxes: [{
+                                            type: 'linear',
+                                            position: 'bottom',
+                                            scaleLabel: {
+                                            display: true,
+                                            labelString: 'Sales Price // List Price'
+                                            },
+                                            ticks: {
+                                            beginAtZero: true,
+                                            suggestedMax: 100
+                                            }
+                                        }],
+                                        yAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Square Feet'
+                                            },
+                                        ticks: {
+                                            beginAtZero: true,
+                                            suggestedMax: 100
+                                        }
+                                        }]
+                                    }
+                                }
+                            });
+                        </script>
+                        <p><?=get_sub_field('graph_summary'); ?></p>
+                    </div>
+                <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
+            <div class="four-closing">
+                <?=get_field('four_closing_phrase'); ?>
+            </div>
+        </div>
+    </section>
+
+    
 </main>
 
 <?php get_footer();
