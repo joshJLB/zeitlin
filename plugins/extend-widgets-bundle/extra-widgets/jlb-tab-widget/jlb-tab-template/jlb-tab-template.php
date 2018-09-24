@@ -20,7 +20,7 @@
 <div class="tab-content">
   <?php
     $count2 = 0;
-   foreach($tabs as $index => $tab) {
+   foreach($tabs as $index => $tab) { 
      $count2++;
     $content = $tab['tab_content'];
     $link_text = $tab['link_text'];

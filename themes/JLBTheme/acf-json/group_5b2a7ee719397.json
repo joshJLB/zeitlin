@@ -212,6 +212,46 @@
                     "mime_types": ""
                 },
                 {
+                    "key": "field_5ba8fd96fdd74",
+                    "label": "Tab Title",
+                    "name": "tab_title",
+                    "type": "text",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ba8fd9ffdd75",
+                    "label": "Tab Content",
+                    "name": "tab_content",
+                    "type": "wysiwyg",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
                     "key": "field_5ba281797b076",
                     "label": "Link Text",
                     "name": "link_text",
@@ -268,5 +308,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1537376653
+    "modified": 1537801769
 }

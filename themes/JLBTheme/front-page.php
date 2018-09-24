@@ -55,7 +55,7 @@ get_header(); ?>
               <a href="<?=get_sub_field('link_url_six'); ?>"><?=get_sub_field('title_six'); ?></a>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
 
       <?php endwhile; wp_reset_postdata(); ?>
@@ -65,16 +65,55 @@ get_header(); ?>
 
   <section class="two">
     <div class="two-container">
-      <?php if ( have_rows('two_repeater') ): ?>
-      <?php while ( have_rows('two_repeater') ): the_row(); ?>
-        <div class="two-links-wrapper">
-          <div class="two-links" style="background-image: url(<?=get_sub_field('image'); ?>);">
-            <div class="overlay3"></div>
-            <a href="<?=get_sub_field('link_url'); ?>"><?=get_sub_field('link_text'); ?></a>
-          </div>
+      <div class="tab-container">
+      <?php 
+        $count = 0;
+        $count2 = 0;
+      ?>
+      
+      <ul class="nav nav-tabs" role="tablist">
+        <?php if ( have_rows('two_repeater') ): ?>
+        <?php while ( have_rows('two_repeater') ): the_row(); ?>
+      
+        <?php 
+          $count++;
+        ?>
+            <li class="nav-item">
+                <a class="nav-link <?php if($count == 1) { echo 'active'; }; ?>" style="background-image: url(<?=get_sub_field('image'); ?>);" data-toggle="tab" href="#tab-<?php echo $count; ?>" role="tab">
+                  <div class="overlay3"></div>
+                  <div class="nav-inner">
+                    <?=get_sub_field('tab_title'); ?>
+                  </div>
+                  <div class="arrow-div white-bottom"></div>
+                  <div class="arrow-div grey-bottom"></div>
+                </a>
+            </li>
+          <?php endwhile; ?>
+          <?php endif; ?>
+        </ul>
+        <div class="tab-content">
+
+          <?php if(get_field('two_repeater')): ?>
+          <?php while( have_rows('two_repeater') ): the_row(); ?>
+            
+            <?php
+              $count2++;
+            ?>
+
+            <div class="tab-pane <?php if($count2 == 1) { echo 'active'; }; ?>" id="tab-<?php echo $count2; ?>" role="tabpanel">
+              <div class="content-holder">
+                <?=get_sub_field('tab_content'); ?>
+                <a href="<?=get_sub_field('link_url'); ?>" class="link-bottom">
+                  <?=get_sub_field('link_text'); ?>
+                </a>
+              </div>
+            </div>
+          <?php endwhile; ?>
+          <?php endif; ?>
         </div>
-      <?php endwhile; ?>
-      <?php endif; ?>
+        </div>
+
+      
     </div>
   </section>
 </main>
