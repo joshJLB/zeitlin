@@ -1,0 +1,54 @@
+@import 'variables'
+
+// Contact Widget Styles
+.widget_jlb-contact-widget
+    margin: 0
+    z-index: 100
+    position: absolute
+    top: 50%
+    left: 10%
+    transform: translateY(-50%)
+    width: 30%
+    @media #{$xxlarge}
+        width: 40%
+        left: 5%
+    @media #{$xlarge}
+        width: 50%
+    @media #{$large}
+        width: 60%
+    @media #{$medium}
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: 80%
+    @media #{$small}
+        width: 90%
+    .contact-container 
+        position: relative
+        padding: 2rem 3rem
+        background: rgba(13,41,79,.8)
+        color: $color2
+        text-align: center
+        @media #{$small}
+            padding: 2rem 1rem
+        h2 
+            // border-bottom: 1px solid $color2
+        .contact-links
+            +fb(center,flex-start)
+            a 
+                width: 33.3%
+                color: $color2
+                font-size: 3rem
+                text-align: center
+            a:hover 
+                color: #ccc
+                transition: .25s
+.widget_jlb-contact-widget:before 
+    content: ''
+    position: absolute 
+    top: 100%
+    left: 50%
+    transform: translateX(-50%)
+    border-left: 40px solid transparent 
+    border-right: 40px solid transparent
+    border-top: 40px solid rgba(13,41,79,.8)
