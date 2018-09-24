@@ -36,6 +36,18 @@ get_header(); ?>
         </div>
     </section>
 
+    <section class="three">
+        <div class="three-container">
+            <div class="three-image" style="background-image: url(<?=get_field('featured_image'); ?>);"></div>
+            <div class="three-content">
+                <h2><?=get_field('section_title'); ?></h2>
+                <h3><? the_title(); ?></h3>
+                <p><?=get_field('section_content'); ?></p>
+                <a href="<?=get_field('link_url'); ?>"><?=get_field('link_text'); ?></a>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <?php get_footer();

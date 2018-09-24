@@ -201,9 +201,9 @@
         },
         {
             "key": "field_5ba53f6a0dbb8",
-            "label": "Address",
-            "name": "address",
-            "type": "textarea",
+            "label": "Sub Title",
+            "name": "sub_title",
+            "type": "text",
             "value": null,
             "instructions": "",
             "required": 0,
@@ -215,9 +215,9 @@
             },
             "default_value": "",
             "placeholder": "",
-            "maxlength": "",
-            "rows": 3,
-            "new_lines": "br"
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_5ba53fb40dbb9",
@@ -294,5 +294,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1537566569
+    "modified": 1537811779
 }

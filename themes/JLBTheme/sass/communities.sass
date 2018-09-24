@@ -66,7 +66,7 @@
             margin: 0
 .two
     .two-container
-        padding: 0 1rem
+        padding: 0 1rem 1rem
         +fb(flex-start,flext-start)
         flex-wrap: wrap
         @media #{$xlarge}
@@ -104,3 +104,51 @@
                 a 
                     .two-links-inner
                         border: 3px solid $color2
+.three
+    padding: 10rem 0
+    background-color: $color4
+    .three-container
+        margin: 0 auto
+        width: 75%
+        +fb(stretch, flex-start)
+        flex-wrap: wrap 
+        @media #{$xxlarge}
+            width: 85%
+        @media #{$xlarge}
+            width: 95%
+        @media #{$large}
+            width: 75%
+        @media #{$medium}
+            width: 85%
+        @media #{$small}
+            width: 100%
+        .three-image, .three-content
+            width: 50%
+            @media #{$large}
+                width: 100%
+        .three-image
+            +bg(cover,center)
+            @media #{$large}
+                margin-bottom: 2rem
+                height: 20rem
+        .three-content
+            padding-left: 5rem
+            @media #{$large}
+                padding: 1rem
+            h2 
+                margin-bottom: 1rem
+            h3 
+                margin-bottom: 1rem
+            p 
+                margin-bottom: 1.5rem
+            a 
+                padding: .5rem 3rem
+                width: 75%
+                display: block
+                color: $color2
+                font-style: italic 
+                text-transform: lowercase
+                text-align: center
+                background-color: $color3
+                @media #{$large}
+                    margin: 0 auto
