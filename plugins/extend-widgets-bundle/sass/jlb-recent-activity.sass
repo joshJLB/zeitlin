@@ -1,0 +1,44 @@
+@import 'variables'
+
+// Recent Activity Styles
+.recent-activity-container
+    margin: 0 auto 4rem
+    width: 50%
+    border: 2px solid $color4
+    @media #{$xxlarge}
+        width: 75%
+    @media #{$large}
+        width: 85%
+    button 
+        position: absolute
+        right: -3rem
+        background: none
+        border: none
+        font-size: 2.5rem
+        color: #777 
+    .slick-prev
+        top: 18%
+        @media #{$medium}
+            top: auto
+            bottom: -3rem
+            left: 40%
+            right: auto
+    .slick-next
+        bottom: 18%
+        @media #{$medium}
+            top: auto
+            bottom: -3rem
+            right: 40%
+    .slick-slide
+        .recent-activity-content
+            +fb(center, flex-start)
+            text-align: center
+            position: relative 
+            p 
+                padding: .5rem
+                margin: 0
+                width: 25%
+    .slick-slide:nth-child(odd) 
+        background-color: #f6f6f6
+        
+        
