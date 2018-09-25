@@ -2,6 +2,7 @@
 
 // Child Header Styling
 .child-header
+  position: relative
   +bg(cover, center)
   +fb(flex-end, center)
   padding: 11rem 5vw 0
@@ -19,8 +20,28 @@
     @media #{$medium}
       padding: 2rem .5rem
       width: 95%
+  .child-header-contact
+    padding: 2rem
+    position: absolute 
+    top: 5rem
+    left: 0
+    color: $color2
+    +fb(center,center)
+    .child-header-image
+      height: 5rem
+      width: 5rem
+      @media #{$medium}
+        height: 3rem
+        width: 3rem
+      img 
+        width: 100%
+    p 
+      padding: 0 1rem
+      margin: 0
+      text-transform: uppercase 
 .child-header-two
   padding: 20rem 5vw 10rem
+  position: relative 
   +bg(cover,center)
   +fb(center,center)
   .child-header-title
@@ -33,3 +54,22 @@
       margin-bottom: 1rem
     p 
       margin: 0
+  .child-header-contact
+    padding: 2rem
+    position: absolute 
+    top: 5rem
+    left: 0
+    color: $color2
+    +fb(center,center)
+    .child-header-image
+      height: 5rem
+      width: 5rem
+      @media #{$medium}
+        height: 3rem
+        width: 3rem
+      img 
+        width: 100%
+    p 
+      padding: 0 1rem
+      margin: 0
+      text-transform: uppercase 

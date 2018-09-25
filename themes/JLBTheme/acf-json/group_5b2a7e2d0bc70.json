@@ -119,6 +119,31 @@
             "maxlength": ""
         },
         {
+            "key": "field_5baaa9aac6d23",
+            "label": "Avatar",
+            "name": "avatar",
+            "type": "image",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_5ba271c547003",
             "label": "Contact Links",
             "name": "contact_links",
@@ -362,5 +387,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1537375331
+    "modified": 1537911305
 }
