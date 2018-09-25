@@ -2,18 +2,24 @@
 
 // ChartJS styles
 .chartjs-container
-    padding: 5rem 0
+    padding: 5rem 0 2.5rem
     margin: 0 auto 
     width: 60%
     text-align: center
+    @media #{$medium}
+        width: 85%
+    @media #{$small}
+        width: 95%
     h2 
         margin-bottom: 1rem
     span 
         font-weight: bold
     .chartjs-widget-canvas
         width: 100%
-        height: 25rem
+        height: 35rem
         position: relative 
+        @media #{$large}
+            height: 25rem
         p 
             z-index: -1
             position: absolute
