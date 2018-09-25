@@ -49,6 +49,19 @@ class JLB_Chartjs extends SiteOrigin_Widget {
           'type' => 'text',
           'label' => __('Title of Graph', 'widget-form-fields-text-domain')
         ),
+        'disclaimer' => array(
+          'type' => 'text',
+          'label' => __('Disclaimer', 'widget-form-fields-text-domain')
+        ),
+        'last_updated' => array(
+          'type' => 'text',
+          'label' => __('Last Updated', 'widget-form-fields-text-domain')
+        ),
+        'chartjs_watermark' => array(
+          'type' => 'tinymce',
+          'label' => __('Watermark', 'widget-form-fields-text-domain'),
+          'default_editor' => 'tmce'
+        ),
         'paramater_horizontal' => array(
             'type' => 'text',
             'label' => __('Name for horizontal axis', 'widget-form-fields-text-domain')
