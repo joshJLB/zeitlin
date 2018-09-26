@@ -44,12 +44,25 @@
   position: relative 
   +bg(cover,center)
   +fb(center,center)
+  @media #{$medium}
+    padding: 20rem 0 0
+    align-content: flex-end 
+  @media #{$small}
+    padding-top: 15rem
   .child-header-title
     padding: 3rem 4rem
     width: 50%
     color: $color2
     text-align: center 
     background: rgba(40,40,40,.7)
+    @media #{$xlarge}
+      width: 70%
+    @media #{$large}
+      padding: 3rem 2rem
+    @media #{$medium}
+      width: 100%
+    @media #{$small}
+      padding: 2rem
     h1 
       margin-bottom: 1rem
     p 
